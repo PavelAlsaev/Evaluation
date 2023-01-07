@@ -80,6 +80,24 @@
         "tag": "Комикс",
         "countLikes": 34,
         "description": "Привет "
+    },
+    { 
+        "id": 11,
+        "name": "Инъекция", 
+        "Autor": "Слава",
+        "image": "gif.gif",
+        "tag": "Арт",
+        "countLikes": 99999,
+        "description": "Привет от Славы"
+    },
+    { 
+        "id": 12,
+        "name": "Инъекция2", 
+        "Autor": "Денис",
+        "image": "pidor.gif",
+        "tag": "Арт",
+        "countLikes": 99999,
+        "description": "Привет от Дениса"
     }
   ]
 }

@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { InputGroup } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const NavHeader = () => {
   const [show, setShow] = useState(false);
@@ -14,7 +15,7 @@ const NavHeader = () => {
   return (
     <header className="main_het">
     <nav className="main_header">
-        <a href="index.html"><img className="log" src="/assets/image/logo.png"/></a>
+        <Link to="/"><img className="log" src="/assets/image/logo.png"/></Link>
         <ul className="menu">
             <div className="dropdown open">
                 <button className="btn dropdown-toggle mt-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
