@@ -1,0 +1,85 @@
+{
+  "works": [
+    { 
+      "id": 1,
+      "name": "Листья", 
+      "Autor": "Собачка",
+      "image": "2.jpg",
+      "tag": "Арт",
+      "countLikes": 23,
+      "description": "Привет привет привет"
+    },
+    { 
+      "id": 2,
+      "name": "Девочка из японии", 
+      "Autor": "Заборчик",
+      "image": "art.jpg",
+      "tag": "Арт",
+      "countLikes": 256,
+      "description": "Привет привет"
+    },
+    { 
+      "id": 3,
+      "name": "Акула", 
+      "Autor": "Заборчик",
+      "image": "3.jpg",
+      "tag": "Комикс",
+      "countLikes": 263,
+      "description": "Привет привет"
+    },
+    { 
+      "id": 4,
+      "name": "Магазин", 
+      "Autor": "Слава",
+      "image": "4.jpg",
+      "tag": "Комикс",
+      "countLikes": 10,
+      "description": "Привет привет"
+    },
+    { 
+      "id": 5,
+      "name": "Котик-Акула", 
+      "Autor": "ГОгоГ",
+      "image": "cat.jpg",
+      "tag": "Арт",
+      "countLikes": 2,
+      "description": "Привет привет"
+    },
+    { 
+      "id": 6,
+      "name": "Печенье", 
+      "Autor": "Заборчик",
+      "image": "comix.png",
+      "tag": "Комикс",
+      "countLikes": 2464,
+      "description": "Привет привет"
+    },
+    { 
+        "id": 7,
+        "name": "Чернила", 
+        "Autor": "Сузуке",
+        "image": "work.png",
+        "tag": "Арт",
+        "countLikes": 1784,
+        "description": "Привет пока"
+    },
+    { 
+        "id": 8,
+        "name": "Морда", 
+        "Autor": "ХЫ",
+        "image": "10.jpg",
+        "tag": "Арт",
+        "countLikes": 11,
+        "description": "Привет "
+    },
+    { 
+        "id": 10,
+        "name": "Укол", 
+        "Autor": "Мыгрязные",
+        "image": "1.jpg",
+        "tag": "Комикс",
+        "countLikes": 34,
+        "description": "Привет "
+    }
+  ]
+}

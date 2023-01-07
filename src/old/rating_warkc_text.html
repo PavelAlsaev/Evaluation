@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rating_works.css" />
+    <title>Рейтинг текстов</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main_het">
+      <nav class="main_header">
+        <a href="index.html"><img class="log" src="image\logo.png" /></a>
+        <ul class="menu">
+          <div class="dropdown open">
+            <button
+              class="btn dropdown-toggle mt-3"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Работы
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Арты</a>
+              <a class="dropdown-item" href="#">Тесты</a>
+              <a class="dropdown-item" href="#">Комиксы</a>
+            </div>
+          </div>
+
+          <div class="dropdown open">
+            <button
+              class="btn dropdown-toggle mt-3"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Рейтинг
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="rating_workc.html">Арты</a>
+              <a class="dropdown-item" href="rating_workc_text.html">Тесты</a>
+              <a class="dropdown-item" href="rating_workc.html">Комиксы</a>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn mt-3">Добавить работу</button>
+          </div>
+
+          <div>
+            <!-- Кнопка-триггер модального окна -->
+            <button
+              type="button"
+              class="btn mt-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Войти
+            </button>
+
+            <!-- Модальное окно -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Авторизация
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Закрыть"
+                    ></button>
+                  </div>
+                  <div class="modal-body">а вот нельзя</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Закрыть
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Сохранить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container text-center">
+      <div class="row align-items-center">
+        <div class="ground mt-3">
+          <h1>Рейтинг работ: Тексты</h1>
+        </div>
+
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Название</th>
+              <th scope="col">Автор</th>
+              <th scope="col">Кол-во лайков</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">1023</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">912</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">354</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">175</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">140</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">100</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">84</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">62</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">55</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+              <td>
+                <span class="badge bg-primary rounded-pill">46</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>          
+      </div>
+    </main>
+  </body>
+</html>
