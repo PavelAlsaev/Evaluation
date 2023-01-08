@@ -98,6 +98,15 @@
         "tag": "Арт",
         "countLikes": 99999,
         "description": "Привет от Дениса"
-    }
+    },
+    { 
+      "id": 13,
+      "name": "Стихи", 
+      "Autor": "Денис",
+      "image": "text.jpg",
+      "tag": "Тексты",
+      "countLikes": 99,
+      "description": "Привет слбовью от Дениса"
+  }
   ]
 }

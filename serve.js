@@ -22,7 +22,6 @@ const serve = async (servedir, listen) => {
 
       const proxyReq = http.request(options, (proxyRes) => {
         if (proxyRes.statusCode === 404) {
-          console.log('status code')
           return forwardRequest('/');
         }
         res.writeHead(proxyRes.statusCode, proxyRes.headers);

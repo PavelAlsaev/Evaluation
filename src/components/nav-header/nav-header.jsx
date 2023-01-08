@@ -33,9 +33,9 @@ const NavHeader = () => {
                   Рейтинг
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a className="dropdown-item" href="rating_workc.html">Арты</a>
-                  <a className="dropdown-item" href="rating_workc_text.html">Тексты</a>
-                  <a className="dropdown-item" href="rating_workc.html">Комиксы</a>
+                  <Link className="dropdown-item" to="/ratingart">Арты</Link>
+                  <Link className="dropdown-item" to="/ratingtext">Тексты</Link>
+                  <Link className="dropdown-item" to="/ratingcomix">Комиксы</Link>
                 </div>
             </div>
 
