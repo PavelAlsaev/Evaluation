@@ -15,6 +15,7 @@ const WorkList = ({ items, date }) => {
             key={work.id}
             id={work.id}
             imgLink={work.image}
+            text={work.text}
             title={work.name}
             author={work.Autor}
             tag={work.tag}

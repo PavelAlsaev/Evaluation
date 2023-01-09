@@ -19,7 +19,12 @@ const WorkPage = () => {
   return (
     <div className="text-center container">
       <h1 className="mt-3">{work.name}</h1>
-      <img src={'/assets/image/' + work.image} />
+      {work.image && (
+        <img src={'/assets/image/' + work.image} />
+      )}
+      {work.text && (
+        <p className="w-50 text-start mx-auto">{work.text}</p>
+      )}
       <div className="w-50 mx-auto">
         <div className="mt-3 d-flex justify-content-between">
           <p>Тип работы: {work.tag}</p>
