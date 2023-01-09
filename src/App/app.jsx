@@ -6,10 +6,9 @@ import {
 } from "react-router-dom";
 import MainPage from '../pages/main-page/main-page';
 import WorkPage from '../pages/work-page/work-page';
-import RatingPageArt from '../pages/rating-page/rating-page-art';
-import RatingPageComix from '../pages/rating-page/rating-page-comix';
-import RatingPageText from '../pages/rating-page/rating-page-text';
 import NavHeader from '../components/nav-header/nav-header';
+import RatingPage from '../pages/rating-page/rating-page';
+import AddWorkPage from '../pages/add-work-page/add-work-page';
 
 const App = () => {
   return (
@@ -17,24 +16,24 @@ const App = () => {
       <NavHeader></NavHeader>
       <Routes>
         <Route
-         path='/' 
-         element={<MainPage />}
+          path='/' 
+          element={<MainPage />}
         />
         <Route
-         path='/work/:id' 
-         element={<WorkPage />}
+          path='/list/:tag/:author?' 
+          element={<MainPage />}
         />
         <Route
-        path='/ratingart'
-        element={<RatingPageArt />}
+          path='/work/:id' 
+          element={<WorkPage />}
         />
-        <Route 
-        path='/ratingcomix'
-        element={<RatingPageComix />}
+        <Route
+          path='/rating/:tag'
+          element={<RatingPage />}
         />
-        <Route 
-        path='/ratingtext'
-        element={<RatingPageText />}
+        <Route
+          path='/publish'
+          element={<AddWorkPage />}
         />
       </Routes>
     </BrowserRouter>

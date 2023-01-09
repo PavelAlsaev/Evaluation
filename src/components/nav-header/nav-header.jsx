@@ -22,9 +22,10 @@ const NavHeader = () => {
                   Работы
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a className="dropdown-item" href="#">Арты</a>
-                  <a className="dropdown-item" href="#">Тексты</a>
-                  <a className="dropdown-item" href="#">Комиксы</a>
+                  <Link className="dropdown-item" to="/">Все</Link>
+                  <Link className="dropdown-item" to="/list/art">Арты</Link>
+                  <Link className="dropdown-item" to="/list/text">Тексты</Link>
+                  <Link className="dropdown-item" to="list/comix">Комиксы</Link>
                 </div>
             </div>
 
@@ -33,14 +34,14 @@ const NavHeader = () => {
                   Рейтинг
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <Link className="dropdown-item" to="/ratingart">Арты</Link>
-                  <Link className="dropdown-item" to="/ratingtext">Тексты</Link>
-                  <Link className="dropdown-item" to="/ratingcomix">Комиксы</Link>
+                  <Link className="dropdown-item" to="/rating/art">Арты</Link>
+                  <Link className="dropdown-item" to="/rating/text">Тексты</Link>
+                  <Link className="dropdown-item" to="/rating/comix">Комиксы</Link>
                 </div>
             </div>
 
             <div>
-                <a href="addWorks.html" type="button" className="btn mt-3" >Добавить работу</a>
+                <Link to="/publish" type="button" className="btn mt-3" >Добавить работу</Link>
             </div>
             
             <div>

@@ -7,7 +7,8 @@
       "image": "2.jpg",
       "tag": "Арт",
       "countLikes": 23,
-      "description": "Привет привет привет"
+      "description": "Привет привет привет",
+      "uploadDate": "09.01.23"
     },
     { 
       "id": 2,
@@ -16,7 +17,8 @@
       "image": "art.jpg",
       "tag": "Арт",
       "countLikes": 256,
-      "description": "Привет привет"
+      "description": "Привет привет",
+      "uploadDate": "09.01.23"
     },
     { 
       "id": 3,
@@ -25,7 +27,8 @@
       "image": "3.jpg",
       "tag": "Комикс",
       "countLikes": 263,
-      "description": "Привет привет"
+      "description": "Привет привет",
+      "uploadDate": "09.01.23"
     },
     { 
       "id": 4,
@@ -34,7 +37,8 @@
       "image": "4.jpg",
       "tag": "Комикс",
       "countLikes": 10,
-      "description": "Привет привет"
+      "description": "Привет привет",
+      "uploadDate": "07.01.23"
     },
     { 
       "id": 5,
@@ -43,7 +47,8 @@
       "image": "cat.jpg",
       "tag": "Арт",
       "countLikes": 2,
-      "description": "Привет привет"
+      "description": "Привет привет",
+      "uploadDate": "07.01.23"
     },
     { 
       "id": 6,
@@ -52,7 +57,8 @@
       "image": "comix.png",
       "tag": "Комикс",
       "countLikes": 2464,
-      "description": "Привет привет"
+      "description": "Привет привет",
+      "uploadDate": "10.01.23"
     },
     { 
         "id": 7,
@@ -61,7 +67,8 @@
         "image": "work.png",
         "tag": "Арт",
         "countLikes": 1784,
-        "description": "Привет пока"
+        "description": "Привет пока",
+        "uploadDate": "07.01.23"
     },
     { 
         "id": 8,
@@ -70,7 +77,8 @@
         "image": "10.jpg",
         "tag": "Арт",
         "countLikes": 11,
-        "description": "Привет "
+        "description": "Привет ",
+        "uploadDate": "09.01.23"
     },
     { 
         "id": 10,
@@ -79,7 +87,8 @@
         "image": "1.jpg",
         "tag": "Комикс",
         "countLikes": 34,
-        "description": "Привет "
+        "description": "Привет ",
+        "uploadDate": "07.01.23"
     },
     { 
         "id": 11,
@@ -88,7 +97,8 @@
         "image": "gif.gif",
         "tag": "Арт",
         "countLikes": 99999,
-        "description": "Привет от Славы"
+        "description": "Привет от Славы",
+        "uploadDate": "07.01.23"
     },
     { 
         "id": 12,
@@ -97,7 +107,8 @@
         "image": "pidor.gif",
         "tag": "Арт",
         "countLikes": 99999,
-        "description": "Привет от Дениса"
+        "description": "Привет от Дениса",
+        "uploadDate": "10.01.23"
     },
     { 
       "id": 13,
@@ -106,7 +117,8 @@
       "image": "text.jpg",
       "tag": "Тексты",
       "countLikes": 99,
-      "description": "Привет слбовью от Дениса"
+      "description": "Привет слбовью от Дениса",
+      "uploadDate": "08.01.23"
   }
   ]
 }
