@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { convertRouteTag } from "../../utils/convert-route-tag";
 
 const COMIX_TYPE = '.png, .jpg, .jpeg';
 const TEXT_TYPE = '.txt';
@@ -9,7 +10,22 @@ const AddWorkPage = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
 
+  const submit = () => {
+    const Autor = '';
+    const date = new Date()
+    const uploadDate = `${`0${(date.getDate())}`.slice(-2)}.${`0${(date.getMonth() + 1)}`.slice(-2)}.${date.getFullYear()}`
 
+    const tag = convertRouteTag(mode)
+    const data = {
+      tag, 
+      name, 
+      description,
+      countLikes: 0,
+      Autor,
+      uploadDate
+    }
+    console.log(data)
+  }
 
   return (
     <div className="container">
@@ -97,7 +113,7 @@ const AddWorkPage = () => {
             ></textarea>
           </div>
           <div className="mt-4">
-            <button className="btn btn-primary">Добавить</button>
+            <button className="btn btn-primary" onClick={() => submit()}>Добавить</button>
             <button className="btn btn-danger mx-3">
               <Link to="/" className="text-white text-decoration-none">Отмена</Link>
             </button>

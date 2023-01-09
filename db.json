@@ -1,8 +1,8 @@
 {
   "works": [
-    { 
+    {
       "id": 1,
-      "name": "Листья", 
+      "name": "Листья",
       "Autor": "Собачка",
       "image": "2.jpg",
       "tag": "Арт",
@@ -10,9 +10,9 @@
       "description": "Привет привет привет",
       "uploadDate": "09.01.23"
     },
-    { 
+    {
       "id": 2,
-      "name": "Девочка из японии", 
+      "name": "Девочка из японии",
       "Autor": "Заборчик",
       "image": "art.jpg",
       "tag": "Арт",
@@ -20,9 +20,9 @@
       "description": "Привет привет",
       "uploadDate": "09.01.23"
     },
-    { 
+    {
       "id": 3,
-      "name": "Акула", 
+      "name": "Акула",
       "Autor": "Заборчик",
       "image": "3.jpg",
       "tag": "Комикс",
@@ -30,9 +30,9 @@
       "description": "Привет привет",
       "uploadDate": "09.01.23"
     },
-    { 
+    {
       "id": 4,
-      "name": "Магазин", 
+      "name": "Магазин",
       "Autor": "Слава",
       "image": "4.jpg",
       "tag": "Комикс",
@@ -40,9 +40,9 @@
       "description": "Привет привет",
       "uploadDate": "07.01.23"
     },
-    { 
+    {
       "id": 5,
-      "name": "Котик-Акула", 
+      "name": "Котик-Акула",
       "Autor": "ГОгоГ",
       "image": "cat.jpg",
       "tag": "Арт",
@@ -50,9 +50,9 @@
       "description": "Привет привет",
       "uploadDate": "07.01.23"
     },
-    { 
+    {
       "id": 6,
-      "name": "Печенье", 
+      "name": "Печенье",
       "Autor": "Заборчик",
       "image": "comix.png",
       "tag": "Комикс",
@@ -60,75 +60,113 @@
       "description": "Привет привет",
       "uploadDate": "10.01.23"
     },
-    { 
-        "id": 7,
-        "name": "Чернила", 
-        "Autor": "Сузуке",
-        "image": "work.png",
-        "tag": "Арт",
-        "countLikes": 1784,
-        "description": "Привет пока",
-        "uploadDate": "07.01.23"
+    {
+      "id": 7,
+      "name": "Чернила",
+      "Autor": "Сузуке",
+      "image": "work.png",
+      "tag": "Арт",
+      "countLikes": 1784,
+      "description": "Привет пока",
+      "uploadDate": "07.01.23"
     },
-    { 
-        "id": 8,
-        "name": "Морда", 
-        "Autor": "ХЫ",
-        "image": "10.jpg",
-        "tag": "Арт",
-        "countLikes": 11,
-        "description": "Привет ",
-        "uploadDate": "09.01.23"
+    {
+      "id": 8,
+      "name": "Морда",
+      "Autor": "ХЫ",
+      "image": "10.jpg",
+      "tag": "Арт",
+      "countLikes": 11,
+      "description": "Привет ",
+      "uploadDate": "09.01.23"
     },
-    { 
-        "id": 10,
-        "name": "Укол", 
-        "Autor": "Мыгрязные",
-        "image": "1.jpg",
-        "tag": "Комикс",
-        "countLikes": 34,
-        "description": "Привет ",
-        "uploadDate": "07.01.23"
+    {
+      "id": 10,
+      "name": "Укол",
+      "Autor": "Мыгрязные",
+      "image": "1.jpg",
+      "tag": "Комикс",
+      "countLikes": 34,
+      "description": "Привет ",
+      "uploadDate": "07.01.23"
     },
-    { 
-        "id": 11,
-        "name": "Инъекция", 
-        "Autor": "Слава",
-        "image": "gif.gif",
-        "tag": "Арт",
-        "countLikes": 99999,
-        "description": "Привет от Славы",
-        "uploadDate": "07.01.23"
+    {
+      "id": 11,
+      "name": "Инъекция",
+      "Autor": "Слава",
+      "image": "gif.gif",
+      "tag": "Арт",
+      "countLikes": 99999,
+      "description": "Привет от Славы",
+      "uploadDate": "07.01.23"
     },
-    { 
-        "id": 12,
-        "name": "Инъекция2", 
-        "Autor": "Денис",
-        "image": "pidor.gif",
-        "tag": "Арт",
-        "countLikes": 99999,
-        "description": "Привет от Дениса",
-        "uploadDate": "10.01.23"
+    {
+      "id": 12,
+      "name": "Инъекция2",
+      "Autor": "Денис",
+      "image": "pidor.gif",
+      "tag": "Арт",
+      "countLikes": 99999,
+      "description": "Привет от Дениса",
+      "uploadDate": "10.01.23"
     },
-    { 
+    {
       "id": 13,
-      "name": "Стихи", 
+      "name": "Стихи",
       "Autor": "Денис",
       "tag": "Тексты",
       "countLikes": 99,
       "description": "Привет слбовью от Дениса",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus suscipit, animi odit praesentium tempora quas, eius id aliquid quasi, a repellendus ex doloribus. Beatae assumenda omnis perferendis sequi consequuntur cupiditate optio similique ipsa vitae. Dolorem harum molestias dolor rem rerum repellendus qui tenetur unde quos hic! Expedita magnam voluptates quisquam ex quia quibusdam dolor ratione obcaecati odio illo voluptatibus voluptas distinctio perspiciatis doloribus nulla, repellat veritatis beatae voluptatum tempora laboriosam ab voluptatem? Numquam voluptates tenetur, et neque ex excepturi illum quis error reiciendis maiores dolorem laboriosam, consequuntur soluta earum laborum quibusdam aut molestias ullam nisi sit ipsam saepe doloremque. In?",
       "uploadDate": "08.01.23"
-  },
-  { 
-    "id": 14,
-    "name": "Стихи", 
-    "Autor": "Денис",
-    "tag": "Тексты",
-    "countLikes": 99,
-    "description": "Привет слбовью от Дениса",
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque praesentium nam asperiores magnam voluptatem repellendus, necessitatibus minus assumenda enim aperiam atque quas accusantium expedita iure ea deserunt. Nam velit quas sunt impedit enim voluptatem optio, aut iste itaque! Minima dolorem necessitatibus soluta quasi distinctio et molestias accusamus nemo at ab quis quos officia earum eum quam sint vel illum, eligendi odit fugiat, ducimus hic molestiae! Reprehenderit voluptate harum animi alias perferendis. Recusandae enim provident ex sint consequuntur eum, quo amet distinctio excepturi, cum ullam! Ipsum soluta, vitae neque, minus suscipit aut alias deleniti beatae ut a dolor reprehenderit totam molestiae rerum? Laboriosam dolorem, eos repellat sequi quae totam tempora repellendus consectetur cupiditate magnam nostrum. Nihil, rerum at iusto velit rem nulla accusantium recusandae nisi dignissimos expedita odio eius officiis perspiciatis exercitationem porro fuga placeat ut facilis nesciunt unde deserunt modi ullam corrupti illo. Rerum vel perferendis et earum maiores labore eos consequatur eum ratione. Tempore, ducimus aliquid! Amet eligendi, beatae ducimus reiciendis corrupti harum earum odio veniam, voluptatem quos animi accusantium cum quae delectus, cumque numquam? Temporibus earum dignissimos consequuntur iusto, eligendi corrupti magni rerum officiis deserunt nulla illum voluptatibus incidunt eius dolor eveniet maiores eos quis vel fugit consequatur molestiae accusamus est. Esse eum explicabo ab ut consequatur corrupti quibusdam distinctio provident officiis id odit itaque eveniet aspernatur perspiciatis minima voluptatum veritatis maiores, magni blanditiis accusantium tenetur ratione adipisci ipsam officia? Eius, architecto sequi tempora eos fugiat, ipsa vitae adipisci omnis odio consequuntur provident, quisquam id. Exercitationem corporis velit atque nesciunt magnam perspiciatis temporibus libero totam aut. Quidem, iure expedita natus nam aperiam cumque aut fuga quo provident. Nihil facilis, placeat cum dolor odio id corrupti facere, nostrum alias molestias explicabo obcaecati nemo laudantium natus veritatis, error sit delectus esse totam beatae tenetur sapiente dolore dolorem? Nisi deleniti maiores rerum maxime aspernatur unde expedita, deserunt voluptatum, eveniet autem quidem assumenda recusandae minus alias dicta totam cum ex nostrum illum fuga fugit cupiditate! Maxime unde aspernatur, beatae temporibus amet modi est distinctio voluptatum doloremque? Debitis tempora recusandae rerum aperiam error doloribus ullam ipsum earum consequatur numquam! Sed cum facere eos corrupti velit dolorum doloribus amet architecto voluptas repellat exercitationem beatae, quasi vero culpa blanditiis veniam optio eius distinctio! Excepturi dicta incidunt eum doloribus possimus at praesentium nulla suscipit quae ad illum pariatur repellendus ipsam ullam nam fugiat neque illo temporibus, numquam, iste culpa debitis! Iure eveniet nostrum asperiores accusamus doloribus sit voluptatem ea, provident ut est quasi veniam nisi, laborum deleniti omnis vel, voluptas illo commodi dolor suscipit deserunt illum delectus? Iusto itaque ea et ipsum impedit! Inventore, quidem accusamus a delectus omnis ratione soluta facilis eligendi maiores officia tempora ipsum autem consectetur veniam mollitia culpa eveniet, consequatur quod explicabo accusantium quia, odio obcaecati quisquam! Accusamus et molestias quis id ab voluptas tempore aliquid nemo, quos exercitationem neque. Sint consectetur obcaecati asperiores harum pariatur unde atque rerum necessitatibus, est quia soluta expedita repellat voluptatibus, dolores vitae voluptatum? Eveniet harum amet cum qui esse dicta ipsum ratione! Atque, ex ut?",
-    "uploadDate": "09.01.23"
-}
+    },
+    {
+      "id": 14,
+      "name": "Стихи",
+      "Autor": "Денис",
+      "tag": "Тексты",
+      "countLikes": 99,
+      "description": "Привет слбовью от Дениса",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque praesentium nam asperiores magnam voluptatem repellendus, necessitatibus minus assumenda enim aperiam atque quas accusantium expedita iure ea deserunt. Nam velit quas sunt impedit enim voluptatem optio, aut iste itaque! Minima dolorem necessitatibus soluta quasi distinctio et molestias accusamus nemo at ab quis quos officia earum eum quam sint vel illum, eligendi odit fugiat, ducimus hic molestiae! Reprehenderit voluptate harum animi alias perferendis. Recusandae enim provident ex sint consequuntur eum, quo amet distinctio excepturi, cum ullam! Ipsum soluta, vitae neque, minus suscipit aut alias deleniti beatae ut a dolor reprehenderit totam molestiae rerum? Laboriosam dolorem, eos repellat sequi quae totam tempora repellendus consectetur cupiditate magnam nostrum. Nihil, rerum at iusto velit rem nulla accusantium recusandae nisi dignissimos expedita odio eius officiis perspiciatis exercitationem porro fuga placeat ut facilis nesciunt unde deserunt modi ullam corrupti illo. Rerum vel perferendis et earum maiores labore eos consequatur eum ratione. Tempore, ducimus aliquid! Amet eligendi, beatae ducimus reiciendis corrupti harum earum odio veniam, voluptatem quos animi accusantium cum quae delectus, cumque numquam? Temporibus earum dignissimos consequuntur iusto, eligendi corrupti magni rerum officiis deserunt nulla illum voluptatibus incidunt eius dolor eveniet maiores eos quis vel fugit consequatur molestiae accusamus est. Esse eum explicabo ab ut consequatur corrupti quibusdam distinctio provident officiis id odit itaque eveniet aspernatur perspiciatis minima voluptatum veritatis maiores, magni blanditiis accusantium tenetur ratione adipisci ipsam officia? Eius, architecto sequi tempora eos fugiat, ipsa vitae adipisci omnis odio consequuntur provident, quisquam id. Exercitationem corporis velit atque nesciunt magnam perspiciatis temporibus libero totam aut. Quidem, iure expedita natus nam aperiam cumque aut fuga quo provident. Nihil facilis, placeat cum dolor odio id corrupti facere, nostrum alias molestias explicabo obcaecati nemo laudantium natus veritatis, error sit delectus esse totam beatae tenetur sapiente dolore dolorem? Nisi deleniti maiores rerum maxime aspernatur unde expedita, deserunt voluptatum, eveniet autem quidem assumenda recusandae minus alias dicta totam cum ex nostrum illum fuga fugit cupiditate! Maxime unde aspernatur, beatae temporibus amet modi est distinctio voluptatum doloremque? Debitis tempora recusandae rerum aperiam error doloribus ullam ipsum earum consequatur numquam! Sed cum facere eos corrupti velit dolorum doloribus amet architecto voluptas repellat exercitationem beatae, quasi vero culpa blanditiis veniam optio eius distinctio! Excepturi dicta incidunt eum doloribus possimus at praesentium nulla suscipit quae ad illum pariatur repellendus ipsam ullam nam fugiat neque illo temporibus, numquam, iste culpa debitis! Iure eveniet nostrum asperiores accusamus doloribus sit voluptatem ea, provident ut est quasi veniam nisi, laborum deleniti omnis vel, voluptas illo commodi dolor suscipit deserunt illum delectus? Iusto itaque ea et ipsum impedit! Inventore, quidem accusamus a delectus omnis ratione soluta facilis eligendi maiores officia tempora ipsum autem consectetur veniam mollitia culpa eveniet, consequatur quod explicabo accusantium quia, odio obcaecati quisquam! Accusamus et molestias quis id ab voluptas tempore aliquid nemo, quos exercitationem neque. Sint consectetur obcaecati asperiores harum pariatur unde atque rerum necessitatibus, est quia soluta expedita repellat voluptatibus, dolores vitae voluptatum? Eveniet harum amet cum qui esse dicta ipsum ratione! Atque, ex ut?",
+      "uploadDate": "09.01.23"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Заборчик",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "Денис",
+      "password": "qwe"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "name": "zxc",
+      "password": "123",
+      "id": 10
+    }
   ]
 }

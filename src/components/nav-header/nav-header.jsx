@@ -5,12 +5,45 @@ import Modal from 'react-bootstrap/Modal';
 import { InputGroup } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import auth from '../../services/auth';
 
 const NavHeader = () => {
   const [show, setShow] = useState(false);
+  const [isRegister, setIsRegister] = useState(false);
+  const [isAuth, setIsAuth] = useState(auth.isLogin());
+
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
+
+  const [error, setError] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const toggleModal = () => {
+    setIsRegister(!isRegister);
+  }
+
+  const submit = async () => {
+    if (isRegister) {
+      if (login.length === 0 || login.password === 0) {
+        setError(true)
+        return
+      }
+      await auth.register(login, password);
+      setShow(false);
+      setIsAuth(true);
+    } else {
+      const isAuth = await auth.login(login, password);
+      if (isAuth) {
+        setShow(false);
+        setIsAuth(true);
+      }
+      else {
+        setError(true);
+      }
+    }
+  }
 
   return (
     <header className="main_het">
@@ -46,35 +79,48 @@ const NavHeader = () => {
             
             <div>
                 {/* <!-- Кнопка-триггер модального окна --> */}
-            <Button variant='light' className="mt-3" onClick={handleShow}>
-              Войти
+            <Button 
+              variant={isAuth ? 'danger' : 'light'}
+              className="mt-3" 
+              onClick={!isAuth ? handleShow : () => {auth.logon(); setIsAuth(false)}}>
+              {isAuth ? 'Выйти' : 'Войти'}
             </Button>
             {/* <!-- Модальное окно --> */}
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton>
-                <Modal.Title>Авторизация</Modal.Title>
+                <Modal.Title>{!isRegister ? 'Авторизация' : 'Регистрация'}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
                  <InputGroup className="mb-3">
                   <Form.Control
                     placeholder="Логин"
+                    className={error ? 'is-invalid' : ''}
                     aria-label="Логин"
+                    onChange={e => setLogin(e.target.value)}
+                    value={login}
                   />
                 </InputGroup>
                 <InputGroup className="mb-3">
                   <Form.Control
                     type='password'
+                    className={error ? 'is-invalid' : ''}
                     placeholder="Пароль"
                     aria-label="Пароль"
+                    onChange={e => setPassword(e.target.value)}
+                    value={password}
                   />
                 </InputGroup>
+                <Button variant="link" onClick={toggleModal}>
+                  {!isRegister ? 'Авторизация' : 'Регистрация'}
+                </Button> 
               </Modal.Body>
               <Modal.Footer>
+               
                 <Button variant="secondary" onClick={handleClose}>
                   Закрыть
                 </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  Войти
+                <Button variant="primary" onClick={submit}>
+                  {!isRegister ? 'Войти' : 'Зарегистрироваться'}
                 </Button>
               </Modal.Footer>
             </Modal>
