@@ -23,7 +23,7 @@ const WorkPage = () => {
         <img src={'/assets/image/' + work.image} />
       )}
       {work.text && (
-        <p className="w-50 text-start mx-auto">{work.text}</p>
+        <p className="w-50 text-start mx-auto" style={{whiteSpace: 'pre-wrap'}}>{work.text}</p>
       )}
       <div className="w-50 mx-auto">
         <div className="mt-3 d-flex justify-content-between">

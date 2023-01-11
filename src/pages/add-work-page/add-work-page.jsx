@@ -1,19 +1,44 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import auth from "../../services/auth";
 import { convertRouteTag } from "../../utils/convert-route-tag";
+import { useNavigate } from 'react-router-dom';
 
 const COMIX_TYPE = '.png, .jpg, .jpeg';
 const TEXT_TYPE = '.txt';
 
 const AddWorkPage = () => {
+  const navigate = useNavigate();
   const [mode, setMode] = useState("comix");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [text, setText] = useState('');
+  const [image, setImage] = useState({});
 
-  const submit = () => {
-    const Autor = '';
+  const [errorTitle, setErrorTitle] = useState(false);
+
+  const loadFile = (e) => {
+    const reader = new FileReader()
+    if (mode === 'text') {
+      reader.onload = (e) => { 
+        const text = (e.target.result)
+        setText(text)
+      };
+      reader.readAsText(e.target.files[0])
+    } else {
+      setImage(e.target.files[0])
+    }
+  }
+
+  const submit = async () => {
+    const Autor = auth.getUserName();
     const date = new Date()
-    const uploadDate = `${`0${(date.getDate())}`.slice(-2)}.${`0${(date.getMonth() + 1)}`.slice(-2)}.${date.getFullYear()}`
+    const uploadDate = `${`0${(date.getDate())}`.slice(-2)}.${`0${(date.getMonth() + 1)}`.slice(-2)}.${date.getFullYear().toString().slice(-2)}`
+
+    if (name === '') {
+      setErrorTitle(true);
+      return;
+    }
 
     const tag = convertRouteTag(mode)
     const data = {
@@ -24,7 +49,35 @@ const AddWorkPage = () => {
       Autor,
       uploadDate
     }
-    console.log(data)
+    if (mode === 'text') {
+      data.text = text
+      await fetch('http://localhost:3000/works', {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+    } else {
+      const formData = new FormData();
+      formData.append('file', image);
+      const d = await fetch('http://localhost:3000/works/image', {
+        method: 'POST',
+        body: formData, 
+      });
+      const dataImage = await d.json();
+      const name = dataImage.name;
+      data.image = name;
+      await fetch('http://localhost:3000/works', {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+    }
+
+    navigate('/');
   }
 
   return (
@@ -35,7 +88,7 @@ const AddWorkPage = () => {
           <span className="mx-4">Название</span>
           <input 
             type="text" 
-            className="form-control" 
+            className={`form-control ${errorTitle ? 'is-invalid' : ''}`} 
             placeholder="Название" 
             value={name}
             onChange={e => setName(e.target.value)}
@@ -96,6 +149,7 @@ const AddWorkPage = () => {
               type="file"
               id="formFile" 
               placeholder="Айла"
+              onChange={loadFile}
               accept={mode === 'text' ? TEXT_TYPE : COMIX_TYPE}
             />
           </div>

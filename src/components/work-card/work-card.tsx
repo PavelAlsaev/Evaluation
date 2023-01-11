@@ -14,7 +14,9 @@ const WorkCard = ({id, imgLink, text, title, author, tag}) => {
         <p style={{
           height: '280px',
           overflow: 'hidden',
-          padding: '10px'
+          padding: '10px',
+          margin: '0',
+          whiteSpace: 'pre-wrap'
         }}>{text}</p>
       )}
       <div className="card-body">
